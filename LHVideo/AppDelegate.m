@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "LHNavigationController.h"
+#import "WSMovieController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <WSMovieControllerDelegate>
 
 @end
 
@@ -16,10 +19,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
+	self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+	self.window.backgroundColor = [UIColor whiteColor];
+	
+	WSMovieController *wsCtrl = [[WSMovieController alloc] init];
+	wsCtrl.delegate = self;
+	wsCtrl.movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"qidong"ofType:@"mp4"]];
+	self.window.rootViewController = wsCtrl;
+	
+	[self.window makeKeyAndVisible];
 	return YES;
 }
 
+-(void)goaaaa {
+	[self creatRootViewController];
+
+}
+
+-(void)creatRootViewController {
+	ViewController * rootViewController = [[ViewController alloc] init];
+	LHNavigationController * navRootController = [[LHNavigationController alloc] initWithRootViewController:rootViewController];
+	
+	[UIView transitionWithView:self.window duration:1.f options:UIViewAnimationOptionTransitionCurlUp animations:^{
+		self.window.rootViewController = navRootController;
+	} completion:nil];
+	
+}
+
+#pragma mark - 每次进入APP前台
+-(void)everyTimesEnterAppForeground {
+	
+	
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
 	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -35,6 +66,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
 	// Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+	[self everyTimesEnterAppForeground];
 }
 
 
