@@ -24,6 +24,7 @@
 		4A962F8E1E1C9A0E003B5A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A962F8D1E1C9A0E003B5A33 /* Assets.xcassets */; };
 		4A962F9C1E1C9A0E003B5A33 /* LHVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A962F9B1E1C9A0E003B5A33 /* LHVideoTests.m */; };
 		4A962FA71E1C9A0E003B5A33 /* LHVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A962FA61E1C9A0E003B5A33 /* LHVideoUITests.m */; };
+		4AB7832C1E72AE6D00706BC7 /* show.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7832B1E72AE6D00706BC7 /* show.mov */; };
 		4AF0DDCA1E1CD5EC00DEE453 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF0DDC91E1CD5EC00DEE453 /* MessageUI.framework */; };
 		4AF0DDCC1E1CD5F700DEE453 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF0DDCB1E1CD5F700DEE453 /* JavaScriptCore.framework */; };
 		4AF0DDCE1E1CD60200DEE453 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF0DDCD1E1CD60200DEE453 /* SystemConfiguration.framework */; };
@@ -78,6 +79,7 @@
 		4A962FA21E1C9A0E003B5A33 /* LHVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A962FA61E1C9A0E003B5A33 /* LHVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHVideoUITests.m; sourceTree = "<group>"; };
 		4A962FA81E1C9A0E003B5A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB7832B1E72AE6D00706BC7 /* show.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = show.mov; sourceTree = "<group>"; };
 		4AF0DDC91E1CD5EC00DEE453 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4AF0DDCB1E1CD5F700DEE453 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		4AF0DDCD1E1CD60200DEE453 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				4A42C61A1E1E314B00914479 /* qidong.mp4 */,
+				4AB7832B1E72AE6D00706BC7 /* show.mov */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB7832C1E72AE6D00706BC7 /* show.mov in Resources */,
 				4A42C61B1E1E314B00914479 /* qidong.mp4 in Resources */,
 				4A962F8E1E1C9A0E003B5A33 /* Assets.xcassets in Resources */,
 			);
